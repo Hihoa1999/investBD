@@ -1,0 +1,127 @@
+.header {
+    height: $heightWithDesktop;
+    background: $themeHeader;
+    z-index: 1000;
+    // position: fixed;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    &__content {
+        width: 100%;
+        height: 100%;
+    }
+    &__logo {
+        float: $l;
+        background: $themeHeader;
+        height: 100%;
+        width: 50%;
+        @include respond(phone) {
+            width: 100%;
+        }
+        @include respond(tab) {
+            width: 80%;
+        }
+        &-logos {
+            position: relative;
+            img {
+                width: 76.5px;
+                height: 75px;
+                position: absolute;
+                left: 8%;
+                padding-top: 2%;
+                float: left;
+                @include respond(phone) {
+                    left: 0%;
+                }
+            }
+            &-title {
+                position: absolute;
+                left: 22%;
+                padding-top: 4%;
+                @include respond(des) {
+                    left: 25%;
+                }
+                @include respond(tab) {
+                    left: 28%;
+                }
+                @include respond(phone) {
+                    left: 35%;
+                }
+                span {
+                    font-weight: bold;
+                    font-size: 24px;
+                    padding: 0px;
+                    @include respond(tab) {
+                        font-size: 20px;
+                    }
+                }
+                p {
+                    text-transform: uppercase;
+                    margin-top: 0px;
+                    @include respond(tab) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    &__search {
+        background: $themeHeader;
+        height: 100%;
+        width: 50%;
+        float: $l;
+        position: relative;
+        @include respond(phone) {
+            display: none;
+        }
+        @include respond(tab) {
+            width: 20%;
+        }
+        &-content {
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 33px;
+            margin-right: 15px;
+            @include respond(tab) {
+                margin-top: 25px;
+            }
+            &-input {
+                position: relative;
+                input {
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid #a2a2a2;
+                    position: relative;
+                    left: 26%;
+                    @include respond(des) {
+                        left: 17%;
+                    }
+                    @include respond(tab) {
+                        width: 80%;
+                        left: 20%;
+                    }
+                }
+                svg {
+                    position: absolute;
+                    width: 20px;
+                    left: 80%;
+                    padding-top: 9px;
+                    @include respond(des) {
+                        left: 70%;
+                    }
+                    @include respond(tab) {
+                        left: 94%;
+                    }
+                }
+            }
+            select {
+                outline: none;
+                border: none;
+                float: right;
+                @include respond(tab) {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.home {
+    width: 100%;
+    position: relative;
+    &__menu {
+        width: 100%;
+        background: $themeMenu;
+        height: $heightMenu;
+        @include respond(tab) {
+            height: $heightMenuTab;
+        }
+        @include respond(phone) {
+            height: $heightMenu;
+        }
+        .menu__links {
+            height: 100%;
+            &-wrapper {
+                list-style: none;
+                float: $l;
+                margin: 10px;
+                @include respond(phone) {
+                    display: none;
+                }
+            }
+            &-wrappers {
+                list-style: none;
+                float: $r;
+                margin: 5px;
+                display: none;
+                @include respond(phone) {
+                    display: block;
+                    margin-right: 20px;
+                }
+            }
+            &-link {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                svg {
+                    width: 20px;
+                }
+            }
+        }
+    }
+    .background {
+        width: 100%;
+        height: 550px;
+        &__img {
+            background-image: url("./../images/back.jpg");
+            min-height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        &__title {
+            position: absolute;
+            font-size: 40px;
+            color: white;
+            top: 25%;
+            left: 5%;
+            font-weight: bold;
+        }
+        &__title2 {
+            position: absolute;
+            color: white;
+            font-size: 40px;
+            top: 35%;
+            left: 10%;
+            font-weight: bold;
+        }
+    }
+    &__introduce {
+        width: 100%;
+        height: 222px;
+        position: relative;
+        &-potentials {
+            position: absolute;
+            width: 90%;
+            left: 5%;
+            top: -60px;
+            @include respond(phone) {
+                left: 2%;
+            }
+            &-name {
+                justify-content: $ct;
+                align-items: $ct;
+                text-align: $ct;
+                float: $l;
+                width: 24%;
+                border: 1px solid #decdcd;
+                background: white;
+                margin-left: 7px;
+                svg {
+                    width: 50px;
+                    margin-top: 10px;
+                }
+                @include respond(des) {
+                    width: 48%;
+                    margin-left: 12px;
+                }
+                @include respond(tab) {
+                    width: 47%;
+                    margin-left: 12px;
+                }
+                @include respond(phone) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
