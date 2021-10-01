@@ -1,5 +1,5 @@
 .home {
-    width: 100%;
+    max-width: 100%;
     position: relative;
     &__menu {
         width: 100%;
@@ -72,39 +72,169 @@
     }
     &__introduce {
         width: 100%;
-        height: 222px;
+        min-height: 222px;
+        @include respond(des) {
+            min-height: 415px;
+        }
+        @include respond(tab) {
+            min-height: 415px;
+        }
+        @include respond(phone) {
+            min-height: 845px;
+        }
         position: relative;
         &-potentials {
             position: absolute;
-            width: 90%;
-            left: 5%;
+            width: 95%;
             top: -60px;
-            @include respond(phone) {
-                left: 2%;
+            left: 3%;
+            @include respond(des) {
+                left: 3.5%;
             }
-            &-name {
+            @include respond(phone) {
+                left: 1%;
+            }
+            &-block {
                 justify-content: $ct;
                 align-items: $ct;
                 text-align: $ct;
                 float: $l;
+                height: 217px;
                 width: 24%;
                 border: 1px solid #decdcd;
                 background: white;
                 margin-left: 7px;
+                @include respond(des) {
+                    width: 48%;
+                    margin-left: 6px;
+                }
+                @include respond(tab) {
+                    width: 47%;
+                    margin-left: 10px;
+                }
+                @include respond(phone) {
+                    width: 100%;
+                    margin-left: 5px;
+                }
                 svg {
                     width: 50px;
                     margin-top: 10px;
                 }
-                @include respond(des) {
-                    width: 48%;
-                    margin-left: 12px;
+            }
+        }
+    }
+    &__opportunity {
+        width: 100%;
+        height: 573px;
+        background-color: $themeHeader;
+        @include respond(tab) {
+            height: 1200px;
+        }
+        &-opportunitys {
+            height: 100%;
+            padding-left: $pd-left;
+            padding-right: $pd-right;
+            @include respond(phone) {
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            &-title {
+                width: 100%;
+                height: 4%;
+                &-color {
+                    float: left;
+                    width: 1%;
+                    height: 100%;
+                    background: $themeMenu;
+                    max-width: 4px;
+                    @include respond(phone) {
+                        max-height: 65%;
+                    }
+                    @include respond(tab) {
+                        max-height: 70%;
+                    }
                 }
-                @include respond(tab) {
-                    width: 47%;
-                    margin-left: 12px;
+                &-text {
+                    float: left;
+                    width: 95%;
+                    margin-left: 5px;
+                    color: $themeMenu;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    span {
+                        font-size: 20px;
+                    }
                 }
-                @include respond(phone) {
-                    width: 100%;
+            }
+            &-industrialArea {
+                width: 100%;
+                height: 96%;
+                &-Area {
+                    width: 70%;
+                    height: 95%;
+                    float: left;
+                    margin-top: 20px;
+                    @include respond(phone) {
+                        width: 100%;
+                    }
+                    .industrialArea-Block1 {
+                        width: 48%;
+                        height: 49%;
+                        float: left;
+                        margin-left: 2px;
+                        margin-top: 2px;
+                        background-image: url("./../images/kkt.png");
+                        @include respond(tab) {
+                            width: 100%;
+                            height: 24%;
+                        }
+                    }
+                    .industrialArea-Block2 {
+                        width: 48%;
+                        height: 49%;
+                        float: left;
+                        margin-left: 2px;
+                        margin-top: 2px;
+                        background-image: url("./../images/kcn.png");
+                        @include respond(tab) {
+                            width: 100%;
+                            height: 24%;
+                        }
+                    }
+                    .industrialArea-Block3 {
+                        width: 48%;
+                        height: 49%;
+                        float: left;
+                        margin-left: 2px;
+                        margin-top: 2px;
+                        background-image: url("./../images/ccn.png");
+                        @include respond(tab) {
+                            width: 100%;
+                            height: 24%;
+                        }
+                    }
+                    .industrialArea-Block4 {
+                        width: 48%;
+                        height: 49%;
+                        float: left;
+                        margin-left: 2px;
+                        margin-top: 2px;
+                        background-image: url("./../images/mgdt.png");
+                        @include respond(tab) {
+                            width: 100%;
+                            height: 24%;
+                        }
+                    }
+                }
+                &-Banner {
+                    width: 30%;
+                    height: 70%;
+                    float: left;
+                    margin-top: 21px;
+                    background-image: url("./../images/banner.png");
+                    @include respond(phone) {
+                        display: none;
+                    }
                 }
             }
         }

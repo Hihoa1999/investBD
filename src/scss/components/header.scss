@@ -11,6 +11,7 @@
     }
     &__logo {
         float: $l;
+        position: relative;
         background: $themeHeader;
         height: 100%;
         width: 50%;
@@ -21,11 +22,10 @@
             width: 80%;
         }
         &-logos {
-            position: relative;
+            position: absolute;
             img {
                 width: 76.5px;
                 height: 75px;
-                position: absolute;
                 left: 8%;
                 padding-top: 2%;
                 float: left;
@@ -34,17 +34,18 @@
                 }
             }
             &-title {
-                position: absolute;
-                left: 22%;
-                padding-top: 4%;
+                width: 50%;
+                margin-top: 6px;
+                float: left;
+                margin-left: 16px;
                 @include respond(des) {
-                    left: 25%;
+                    margin-top: 6px;
                 }
                 @include respond(tab) {
-                    left: 28%;
+                    margin-top: 5px;
                 }
                 @include respond(phone) {
-                    left: 35%;
+                    margin-top: 0px;
                 }
                 span {
                     font-weight: bold;
