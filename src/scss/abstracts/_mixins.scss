@@ -1,8 +1,23 @@
 @mixin respond($breakpoint) {
+    @if $breakpoint==ss-phone {
+        @media only screen and (max-width: 404px) {
+            @content;
+        } //404px
+    }
+    @if $breakpoint==small-phone {
+        @media only screen and (max-width: 439px) {
+            @content;
+        } //439px
+    }
     @if $breakpoint==phone {
         @media only screen and (max-width: 37.5em) {
             @content;
         } //600px
+    }
+    @if $breakpoint==small-tab {
+        @media only screen and (max-width: 666px) {
+            @content;
+        } //900px
     }
     @if $breakpoint==tab {
         @media only screen and (max-width: 56.25em) {
@@ -21,6 +36,37 @@
     }
 }
 
-@mixin secondaryFont {
-    font-family: 'Overpass', sans-serif;
+@mixin block {
+    width: 48%;
+    height: 49%;
+    float: left;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+@mixin span {
+    padding-left: 5px;
+    padding-bottom: 3px;
+    background: $themeMenu;
+}
+
+@mixin a {
+    padding-left: 5px;
+    text-decoration: none;
+    color: $themeMenu;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+@mixin pd-section {
+    padding-right: $pd-right;
+    padding-left: $pd-left;
+    height: 100%;
+}
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
