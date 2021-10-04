@@ -72,34 +72,35 @@
     }
     &__introduce {
         width: 100%;
-        min-height: 222px;
+        min-height: 176px;
         @include respond(des) {
-            min-height: 415px;
+            min-height: 372px;
         }
         @include respond(tab) {
-            min-height: 415px;
+            min-height: 372px;
         }
         @include respond(phone) {
-            min-height: 845px;
+            min-height: 762px;
         }
         position: relative;
         &-potentials {
             position: absolute;
-            width: 95%;
+            width: 80%;
             top: -60px;
-            left: 3%;
+            left: 9.5%;
             @include respond(des) {
-                left: 3.5%;
+                left: 10.5%;
             }
             @include respond(phone) {
-                left: 1%;
+                left: 13%;
+                width: 70%;
             }
             &-block {
                 justify-content: $ct;
                 align-items: $ct;
                 text-align: $ct;
                 float: $l;
-                height: 217px;
+                height: 187px;
                 width: 24%;
                 border: 1px solid #decdcd;
                 background: white;
@@ -107,6 +108,7 @@
                 @include respond(des) {
                     width: 48%;
                     margin-left: 6px;
+                    margin-top: 1%;
                 }
                 @include respond(tab) {
                     width: 47%;
@@ -115,10 +117,17 @@
                 @include respond(phone) {
                     width: 100%;
                     margin-left: 5px;
+                    margin-top: 2%;
                 }
                 svg {
-                    width: 50px;
+                    width: 34px;
                     margin-top: 10px;
+                }
+                h3 {
+                    margin-top: 0px;
+                }
+                p {
+                    font-size: 14px;
                 }
             }
         }
@@ -163,6 +172,9 @@
                     text-transform: uppercase;
                     span {
                         font-size: 20px;
+                        @include respond(des) {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -228,13 +240,13 @@
     }
     &__news {
         width: 100%;
-        height: 573px;
+        min-height: 573px;
         margin-top: 20px;
-        @include respond(tab) {
-            height: 870px;
+        @include respond(des) {
+            min-height: 602px;
         }
-        @include respond(small-tab) {
-            height: 1070px;
+        @include respond(tab) {
+            min-height: 870px;
         }
         @include respond(phone) {
             height: 1300px;
@@ -271,6 +283,11 @@
             &-title {
                 width: 100%;
                 height: 9%;
+                margin-bottom: 17px;
+                @include respond(tab) {
+                    margin-bottom: 0px;
+                    height: 7%;
+                }
                 @include respond(phone) {
                     height: 5%;
                 }
@@ -299,7 +316,7 @@
                     width: 93%;
                     height: 65%;
                     @include respond(des) {
-                        height: 50%;
+                        height: 40%;
                     }
                     @include respond(phone) {
                         width: 100%;
@@ -308,6 +325,12 @@
                     @include respond(ss-phone) {
                         height: 40%;
                     }
+                }
+                h1 {
+                    width: 93%;
+                }
+                p {
+                    width: 93%;
                 }
             }
             &-sup {
@@ -324,6 +347,9 @@
                 &-sups {
                     height: 28%;
                     margin-top: 8px;
+                    @include respond(tab) {
+                        min-height: 89px;
+                    }
                     &-img {
                         width: 30%;
                         float: left;
@@ -332,12 +358,19 @@
                         img {
                             width: 100%;
                             height: 100%;
+                            @include respond(des) {
+                                height: 50%;
+                            }
                         }
                     }
                     &-title {
                         width: 70%;
                         float: left;
                         height: 9%;
+                        font-size: 15px;
+                        @include respond(des) {
+                            font-size: 14px;
+                        }
                         @include respond(phone) {
                             height: 5%;
                         }
@@ -350,6 +383,9 @@
                             margin-left: 5px;
                             margin-bottom: 0px;
                             margin-top: 0px;
+                            @include respond(des) {
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
@@ -375,6 +411,7 @@
             &-new {
                 padding-left: 20px;
                 margin-top: 10px;
+                width: 100%;
                 &-title {
                     span {
                         @include span;
@@ -386,18 +423,40 @@
                 svg {
                     width: 20px;
                 }
+                marquee {
+                    width: 80%;
+                    cursor: pointer;
+                }
             }
         }
     }
     &__investment {
         width: 100%;
+        min-height: 440px;
+        @include respond(des) {
+            min-height: 450px;
+        }
+        @include respond(tab) {
+            min-height: 900px;
+        }
+        @include respond(small-tab) {
+            min-height: 1100px;
+        }
+        @include respond(phone) {
+            height: 2732px;
+        }
         .pd-section {
             @include pd-section;
+            @include respond(phone) {
+                padding-right: 19px;
+                padding-left: 20px;
+                height: 100%;
+            }
         }
         &-block {
-            width: 25%;
             float: left;
             padding-top: 10px;
+            width: 25%;
             @include respond(tab) {
                 width: 50%;
                 float: left;
@@ -405,6 +464,7 @@
             @include respond(phone) {
                 width: 100%;
                 float: left;
+                height: 25%;
             }
             &-title {
                 span {
@@ -413,7 +473,7 @@
                 a {
                     @include a;
                     @include respond(des) {
-                        font-size: 15px;
+                        font-size: $title;
                     }
                 }
             }
@@ -422,6 +482,9 @@
                     img {
                         width: 95%;
                         padding-top: 10px;
+                        @include respond(phone) {
+                            width: 100%;
+                        }
                     }
                     p {
                         width: 95%;
@@ -437,11 +500,10 @@
                         width: 60%;
                         margin-top: 0px;
                         padding-left: 10px;
-                        @include respond(tab) {
-                            margin-top: 16px;
-                        }
+                        @include respond(tab) {}
                         @include respond(phone) {
-                            margin-top: 35px;
+                            margin-top: 12px;
+                            margin-bottom: 48px;
                         }
                         @include respond(ss-phone) {
                             margin-top: -3px;
@@ -452,61 +514,84 @@
         }
     }
     &__utilities {
-        min-height: 636px;
+        min-height: 200px;
+        @include respond(des) {
+            min-height: 200px;
+        }
         @include respond(tab) {
-            min-height: 1150px;
+            min-height: 220px;
         }
         .pd-section {
             @include pd-section;
+            @include respond(phone) {
+                padding-right: 19px;
+                padding-left: 20px;
+            }
         }
         &-slider {
             &-left {
                 width: 5%;
                 float: left;
+                padding-right: 10px;
                 @include respond(tab) {
                     width: 7%;
+                    padding-right: 20px;
                 }
                 @include respond(phone) {
-                    width: 13%;
+                    width: 10%;
                 }
                 @include respond(ss-phone) {
-                    width: 20%;
+                    width: 9%;
                 }
                 svg {
                     width: 44px;
                     color: #4a5254;
                     padding-top: 51px;
+                    @include respond(ss-phone) {
+                        width: 33px;
+                    }
                 }
             }
             &-right {
                 width: 5%;
                 float: left;
+                padding-left: 10px;
                 @include respond(tab) {
                     width: 10%;
+                    padding-left: 2px;
+                }
+                @include respond(ss-phone) {
+                    width: 9%;
                 }
                 svg {
                     width: 44px;
                     color: #4a5254;
                     padding-top: 51px;
+                    @include respond(ss-phone) {
+                        width: 33px;
+                    }
                 }
             }
         }
         .wrapper {
             float: left;
-            max-height: 120px;
+            max-height: 127px;
             display: flex;
             overflow-x: auto;
             margin-top: 20px;
-            width: 88%;
+            width: 80%;
+            padding: 0px;
             padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
             @include respond(tab) {
-                width: 80%;
+                width: 64%;
             }
             @include respond(phone) {
-                width: 74%;
+                width: 62%;
             }
             @include respond(ss-phone) {
-                width: 67%;
+                width: 58%;
             }
             .item {
                 min-width: 23%;
@@ -517,11 +602,17 @@
                 border-radius: 24px;
                 margin-right: 24px;
                 color: $themeMenu;
+                @include respond(des) {
+                    min-width: 200px;
+                }
+                @include respond(tab) {
+                    min-width: 200px;
+                }
                 @include respond(ss-phone) {
-                    min-width: 100%;
+                    min-width: 200px;
                 }
                 @include respond(phone) {
-                    min-width: 50%;
+                    min-width: 200px;
                 }
             }
         }

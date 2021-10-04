@@ -1,42 +1,85 @@
 .footer {
     background: #686868;
+    width: 100%;
+    height: 300px;
     @include respond(tab) {
-        padding-top: 15px;
+        height: 520px;
     }
     @include respond(phone) {
-        padding-top: 200px
+        height: 522px;
     }
     @include respond(ss-phone) {
         padding-top: 0px;
     }
     .pd-section {
         @include pd-section;
-    }
-    &__infomation {
-        height: 80%;
-        width: 60%;
-        float: left;
-        h2 {
-            color: white;
+        @include respond(phone) {
+            padding-right: 19px;
+            padding-left: 20px;
         }
-        p {
-            color: white;
-        }
-    }
-    &__map {
-        width: 40%;
-        float: left;
-        img {
-            padding-top: 16px;
+        .footer-top {
             width: 100%;
+            height: 100%;
+            .footer__infomation {
+                width: 50%;
+                float: left;
+                @include respond(tab) {
+                    width: 100%;
+                    float: left;
+                }
+                @include respond(phone) {
+                    width: 100%;
+                    float: left;
+                    height: 53%;
+                }
+                h2 {
+                    color: white;
+                }
+                p {
+                    color: white;
+                }
+            }
+            .footer__map {
+                width: 50%;
+                float: left;
+                height: 95%;
+                @include respond(tab) {
+                    width: 100%;
+                    float: left;
+                    height: 50%;
+                }
+                @include respond(phone) {
+                    height: 40%;
+                }
+                img {
+                    margin-top: 20px;
+                    width: 90%;
+                    height: 90%;
+                    @include respond(tab) {
+                        height: 90%;
+                        width: 70%;
+                        margin-top: 0px;
+                    }
+                    @include respond(phone) {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
-    &__end {
+    .footer-bottom {
         width: 100%;
-        height: 20%;
+        height: 146px;
+        background: #424242;
         @include center;
+        @include respond(phone) {
+            height: 237px;
+        }
         p {
             color: white;
+            margin: 0px;
+            line-height: 30px;
         }
     }
 }

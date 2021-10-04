@@ -15,7 +15,7 @@
         } //600px
     }
     @if $breakpoint==small-tab {
-        @media only screen and (max-width: 666px) {
+        @media only screen and (max-width: 627px) {
             @content;
         } //900px
     }
