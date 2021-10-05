@@ -1,3 +1,6 @@
 [submodule "INVESTBD"]
     path = INVESTBD
     url = https://github.com/Hihoa1999/investBD
+[submodule "Hihoa1999/investBD"]
+	path = Hihoa1999/investBD
+	url = https://github.com/Hihoa1999/investBD.git
