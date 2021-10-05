@@ -1,3 +1,23 @@
+.scroll {
+    position: fixed;
+    z-index: 10;
+    top: 91%;
+    left: 93%;
+    svg {
+        width: 41px;
+        background: #369f81;
+        color: white;
+        border-radius: 12px;
+        outline: none;
+    }
+    @include respond(tab) {
+        left: 88%;
+    }
+    @include respond(ss-phone) {
+        left: 85%;
+    }
+}
+
 .home {
     max-width: 100%;
     position: relative;
@@ -199,6 +219,13 @@
                             height: 24%;
                         }
                         @include block;
+                        p {
+                            @include p;
+                            @include respond(des) {}
+                        }
+                    }
+                    .industrialArea-Block1:hover {
+                        @include hover;
                     }
                     .industrialArea-Block2 {
                         @include block;
@@ -207,6 +234,13 @@
                             width: 100%;
                             height: 24%;
                         }
+                        p {
+                            @include p;
+                            @include respond(des) {}
+                        }
+                    }
+                    .industrialArea-Block2:hover {
+                        @include hover;
                     }
                     .industrialArea-Block3 {
                         @include block;
@@ -215,6 +249,13 @@
                             width: 100%;
                             height: 24%;
                         }
+                        p {
+                            @include p;
+                            @include respond(des) {}
+                        }
+                    }
+                    .industrialArea-Block3:hover {
+                        @include hover;
                     }
                     .industrialArea-Block4 {
                         @include block;
@@ -223,14 +264,26 @@
                             width: 100%;
                             height: 24%;
                         }
+                        p {
+                            @include p;
+                            @include respond(des) {}
+                        }
+                    }
+                    .industrialArea-Block4:hover {
+                        @include hover;
                     }
                 }
                 &-Banner {
                     width: 30%;
-                    height: 70%;
+                    height: 92%;
                     float: left;
                     margin-top: 21px;
                     background-image: url("./../images/banner.png");
+                    @include respond(tab) {
+                        height: 40%;
+                        width: 28%;
+                        margin-left: 2px;
+                    }
                     @include respond(phone) {
                         display: none;
                     }
@@ -325,6 +378,9 @@
                     @include respond(ss-phone) {
                         height: 40%;
                     }
+                }
+                img:hover {
+                    @include hover;
                 }
                 h1 {
                     width: 93%;
@@ -486,6 +542,9 @@
                             width: 100%;
                         }
                     }
+                    img:hover {
+                        @include hover;
+                    }
                     p {
                         width: 95%;
                     }
@@ -602,6 +661,8 @@
                 border-radius: 24px;
                 margin-right: 24px;
                 color: $themeMenu;
+                box-shadow: -3px 4px 0px 0px #a9a9a9;
+                background: #f1ecec;
                 @include respond(des) {
                     min-width: 200px;
                 }
@@ -614,6 +675,9 @@
                 @include respond(phone) {
                     min-width: 200px;
                 }
+            }
+            .item:hover {
+                @include hover;
             }
         }
          ::-webkit-scrollbar {

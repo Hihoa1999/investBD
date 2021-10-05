@@ -1,6 +1,6 @@
 <scipt />
 
-<header class="header">
+<header class="header" id="header">
   <div class="header__content">
     <div class="header__logo">
       <div class="header__logo-logos">

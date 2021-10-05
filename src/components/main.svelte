@@ -1,10 +1,24 @@
 <script>
   let src = "./images/back.png";
-  
 </script>
-
+<a class="scroll" href="#header"
+    ><svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M5 15l7-7 7 7"
+      />
+    </svg></a
+  >
 <div class="home">
-  <section class="home__menu">
+  <section class="home__menu" id="#home__menu">
     <ul class="menu__links">
       <li class="menu__links-wrapper">
         <a href="#index" class="menu__links-link">
@@ -25,20 +39,21 @@
         </a>
       </li>
       <li class="menu__links-wrapper">
-        <a href="#home__introduce" class="menu__links-link">Tiềm năng lợi thế</a
+        <a href="#home__investment" class="menu__links-link"
+          >Tiềm năng lợi thế</a
         >
       </li>
       <li class="menu__links-wrapper">
         <a href="#thutuc" class="menu__links-link">Thủ tục đầu tư</a>
       </li>
       <li class="menu__links-wrapper">
-        <a href="#thongtin" class="menu__links-link">Thông tin đầu tư</a>
+        <a href="#home__news" class="menu__links-link">Thông tin đầu tư</a>
       </li>
       <li class="menu__links-wrapper">
         <a href="#home__opportunity" class="menu__links-link">Cơ hội đầu tư</a>
       </li>
       <li class="menu__links-wrapper">
-        <a href="#hoidap" class="menu__links-link">Hỏi đáp</a>
+        <a href="#footer" class="menu__links-link">Hỏi đáp</a>
       </li>
       <li class="menu__links-wrappers">
         <a href="#index" class="menu__links-link">
@@ -162,10 +177,18 @@
       </div>
       <div class="home__opportunity-opportunitys-industrialArea">
         <div class="home__opportunity-opportunitys-industrialArea-Area">
-          <div class="industrialArea-Block1" />
-          <div class="industrialArea-Block2" />
-          <div class="industrialArea-Block3" />
-          <div class="industrialArea-Block4" />
+          <div class="industrialArea-Block1">
+            <p>Khu kinh tế</p>
+          </div>
+          <div class="industrialArea-Block2">
+            <p>Khu công nghiệp</p>
+          </div>
+          <div class="industrialArea-Block3">
+            <p>Cụm công nghiệp</p>
+          </div>
+          <div class="industrialArea-Block4">
+            <p>Dự án mời gọi đầu tư</p>
+          </div>
         </div>
         <div class="home__opportunity-opportunitys-industrialArea-Banner" />
       </div>
@@ -176,7 +199,7 @@
     <div class="pd-section">
       <div class="home__news-new">
         <div class="home__news-new-title">
-          <span></span>
+          <span />
           <a href="#.">Tin mới</a>
         </div>
         <div class="home__news-new-main">
@@ -191,7 +214,7 @@
         <div class="home__news-new-sup">
           <div class="home__news-new-sup-sups">
             <div class="home__news-new-sup-sups-img">
-              <img src="./../images/news.png" alt="anh" />
+              <img src="./../images/new.png" alt="anh" />
             </div>
             <div class="home__news-new-sup-sups-title">
               <h3>
@@ -205,7 +228,7 @@
           </div>
           <div class="home__news-new-sup-sups">
             <div class="home__news-new-sup-sups-img">
-              <img src="./../images/news.png" alt="anh" />
+              <img src="./../images/new.png" alt="anh" />
             </div>
             <div class="home__news-new-sup-sups-title">
               <h3>
@@ -219,7 +242,7 @@
           </div>
           <div class="home__news-new-sup-sups">
             <div class="home__news-new-sup-sups-img">
-              <img src="./../images/news.png" alt="anh" />
+              <img src="./../images/new.png" alt="anh" />
             </div>
             <div class="home__news-new-sup-sups-title">
               <h3>
@@ -235,7 +258,7 @@
       </div>
       <div class="home__news-notification">
         <div class="home__news-new-title">
-          <span></span>
+          <span />
           <a href="#.">Thông báo</a>
         </div>
         <div class="home__news-notification-new">
@@ -254,7 +277,11 @@
             />
           </svg>
           <!-- svelte-ignore a11y-distracting-elements -->
-          <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="5">Thông báo quan trọng</marquee>
+          <marquee
+            onmouseover="this.stop()"
+            onmouseout="this.start()"
+            scrollamount="5">Thông báo quan trọng</marquee
+          >
         </div>
         <div class="home__news-notification-new">
           <svg
@@ -272,7 +299,11 @@
             />
           </svg>
           <!-- svelte-ignore a11y-distracting-elements -->
-          <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="5">Thông báo quan trọng</marquee>
+          <marquee
+            onmouseover="this.stop()"
+            onmouseout="this.start()"
+            scrollamount="5">Thông báo quan trọng</marquee
+          >
         </div>
         <div class="home__news-notification-new">
           <svg
@@ -290,7 +321,11 @@
             />
           </svg>
           <!-- svelte-ignore a11y-distracting-elements -->
-          <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="5">Thông báo quan trọng</marquee>
+          <marquee
+            onmouseover="this.stop()"
+            onmouseout="this.start()"
+            scrollamount="5">Thông báo quan trọng</marquee
+          >
         </div>
         <div class="home__news-notification-new">
           <svg
@@ -308,7 +343,11 @@
             />
           </svg>
           <!-- svelte-ignore a11y-distracting-elements -->
-          <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="5">Thông báo quan trọng</marquee>
+          <marquee
+            onmouseover="this.stop()"
+            onmouseout="this.start()"
+            scrollamount="5">Thông báo quan trọng</marquee
+          >
         </div>
         <div class="home__news-notification-new">
           <svg
@@ -326,7 +365,11 @@
             />
           </svg>
           <!-- svelte-ignore a11y-distracting-elements -->
-          <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="5">Thông báo quan trọng</marquee>
+          <marquee
+            onmouseover="this.stop()"
+            onmouseout="this.start()"
+            scrollamount="5">Thông báo quan trọng</marquee
+          >
         </div>
         <div class="home__news-notification-new">
           <svg
@@ -344,7 +387,11 @@
             />
           </svg>
           <!-- svelte-ignore a11y-distracting-elements -->
-          <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="5">Thông báo quan trọng</marquee>
+          <marquee
+            onmouseover="this.stop()"
+            onmouseout="this.start()"
+            scrollamount="5">Thông báo quan trọng</marquee
+          >
         </div>
         <div class="home__news-notification-new">
           <svg
@@ -362,21 +409,25 @@
             />
           </svg>
           <!-- svelte-ignore a11y-distracting-elements -->
-          <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="5">Thông báo quan trọng</marquee>
+          <marquee
+            onmouseover="this.stop()"
+            onmouseout="this.start()"
+            scrollamount="5">Thông báo quan trọng</marquee
+          >
         </div>
       </div>
     </div>
   </section>
-  <section class="home__investment">
+  <section class="home__investment" id="home__investment">
     <div class="pd-section">
       <div class="home__investment-block">
         <div class="home__investment-block-title">
-          <span></span>
+          <span />
           <a href="#.">Xúc tiến đầu tư</a>
         </div>
         <div class="home__investment-block-mains">
           <div class="home__investment-block-mains-main">
-            <img src="./../images/news.png" alt="anh" />
+            <img src="./../images/xtdt.png" alt="anh" />
             <p>Điều chỉnh quy hoạch sử dụng đất trong khu biệt thự</p>
           </div>
           <div class="home__investment-block-mains-sub">
@@ -389,12 +440,12 @@
       </div>
       <div class="home__investment-block">
         <div class="home__investment-block-title">
-          <span></span>
+          <span />
           <a href="#.">Hợp tác</a>
         </div>
         <div class="home__investment-block-mains">
           <div class="home__investment-block-mains-main">
-            <img src="./../images/news.png" alt="anh" />
+            <img src="./../images/ht.png" alt="anh" />
             <p>Điều chỉnh quy hoạch sử dụng đất trong khu biệt thự</p>
           </div>
           <div class="home__investment-block-mains-sub">
@@ -407,12 +458,12 @@
       </div>
       <div class="home__investment-block">
         <div class="home__investment-block-title">
-          <span></span>
+          <span />
           <a href="#.">ODA-NGO</a>
         </div>
         <div class="home__investment-block-mains">
           <div class="home__investment-block-mains-main">
-            <img src="./../images/news.png" alt="anh" />
+            <img src="./../images/oda.png" alt="anh" />
             <p>Điều chỉnh quy hoạch sử dụng đất trong khu biệt thự</p>
           </div>
           <div class="home__investment-block-mains-sub">
@@ -425,12 +476,12 @@
       </div>
       <div class="home__investment-block">
         <div class="home__investment-block-title">
-          <span></span>
+          <span />
           <a href="#.">Văn bản chính sách</a>
         </div>
         <div class="home__investment-block-mains">
           <div class="home__investment-block-mains-main">
-            <img src="./../images/news.png" alt="anh" />
+            <img src="./../images/vb.png" alt="anh" />
             <p>Điều chỉnh quy hoạch sử dụng đất trong khu biệt thự</p>
           </div>
           <div class="home__investment-block-mains-sub">
@@ -447,31 +498,30 @@
   <section class="home__utilities" id="home__utilities">
     <div class="pd-section">
       <div class="home__investment-block-title">
-        <span></span>
+        <span />
         <a href="#.">Tiện ích</a>
       </div>
-        <div class="home__utilities-slider">
-          <div class="home__utilities-slider-left">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
-            </svg>
-          </div>
-          <div class="wrapper">
-            <div class="item">Lịch công tác</div>
-            <div class="item">Văn phòng điện tử</div>
-            <div class="item">Văn bản chỉ đạo</div>
-            <div class="item">Thư điện tử</div>
-            <div class="item">one</div>
-            <div class="item">two</div>
-            <div class="item">three</div>
-          </div>
-          <div class="home__utilities-slider-right">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
+      <div class="home__utilities-slider">
+        <div class="home__utilities-slider-left">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
         </div>
+        <div class="wrapper">
+          <div class="item">Lịch công tác</div>
+          <div class="item">Văn phòng điện tử</div>
+          <div class="item">Văn bản chỉ đạo</div>
+          <div class="item">Thư điện tử</div>
+          <div class="item">one</div>
+          <div class="item">two</div>
+          <div class="item">three</div>
+        </div>
+        <div class="home__utilities-slider-right">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </div>
     </div>
   </section>
 </div>
-
