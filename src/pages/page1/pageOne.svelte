@@ -1,1 +1,1 @@
-<h1>Đây là page 2</h1>
+<h1 style="text-align:center">Đây là page 2</h1>

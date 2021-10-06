@@ -23,45 +23,55 @@
         }
         &-logos {
             position: absolute;
+            width: 100%;
             img {
                 width: 76.5px;
                 height: 75px;
                 left: 8%;
                 padding-top: 2%;
                 float: left;
+                padding-left: 13px;
                 @include respond(phone) {
                     left: 0%;
                 }
             }
             &-title {
                 width: 50%;
-                margin-top: 6px;
+                padding-top: 26px;
                 float: left;
                 margin-left: 16px;
                 @include respond(des) {
-                    margin-top: 6px;
+                    width: 72%;
                 }
                 @include respond(tab) {
-                    margin-top: 5px;
+                    width: 72%;
                 }
                 @include respond(phone) {
-                    margin-top: 0px;
+                    width: 56%;
                 }
-                span {
+                @include respond(small-phone) {
+                    padding-top: 13px;
+                }
+                a.title {
                     font-weight: bold;
                     font-size: 24px;
                     padding: 0px;
                     cursor: pointer;
+                    text-decoration: none;
+                    color: $themeMenu;
                     @include respond(tab) {
                         font-size: 20px;
                     }
                 }
-                p {
+                a {
                     text-transform: uppercase;
                     margin-top: 0px;
                     cursor: pointer;
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: $themeMenu;
                     @include respond(tab) {
-                        font-size: 18px;
+                        font-size: 14px;
                     }
                 }
             }

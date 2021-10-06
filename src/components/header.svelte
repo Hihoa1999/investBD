@@ -13,8 +13,8 @@
       <div class="header__logo-logos">
         <img src="./../images/logo.png" alt="logo" />
         <div class="header__logo-logos-title">
-          <span on:click={incrementCount}>INVESTBINHDINH</span>
-          <p>Đồng hành cùng nhà đầu tư</p>
+          <a class="title" href="./">INVESTBINHDINH</a><br />
+          <a href="./">Đồng hành cùng nhà đầu tư</a>
         </div>
       </div>
     </div>
