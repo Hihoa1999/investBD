@@ -1,11 +1,12 @@
-<script>
-  import Header from "./components/header.svelte";
-  import Main from "./components/main.svelte";
-  import Footer from "./components/footer.svelte";
-</script>
-
 <main>
   <Header />
-  <Main />
+    <Router {routes}/>
   <Footer />
 </main>
+<script>
+  import Router from 'svelte-spa-router'
+  import Header from "./components/header.svelte";
+  import Footer from "./components/footer.svelte";
+  import routes from "./../routes";
+</script>
+

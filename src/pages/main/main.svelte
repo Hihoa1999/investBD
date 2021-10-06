@@ -1,5 +1,6 @@
 <script>
   let src = "./images/back.png";
+  import {link} from 'svelte-spa-router';
 </script>
 <a class="scroll" href="#header"
     ><svg
@@ -44,7 +45,7 @@
         >
       </li>
       <li class="menu__links-wrapper">
-        <a href="#thutuc" class="menu__links-link">Thủ tục đầu tư</a>
+        <a href="/page2/" class="menu__links-link" use:link>Thủ tục đầu tư</a>
       </li>
       <li class="menu__links-wrapper">
         <a href="#home__news" class="menu__links-link">Thông tin đầu tư</a>
@@ -280,7 +281,8 @@
           <marquee
             onmouseover="this.stop()"
             onmouseout="this.start()"
-            scrollamount="5">Thông báo quan trọng</marquee
+            direction="left"
+            scrollamount="3">Thông báo quan trọng</marquee
           >
         </div>
         <div class="home__news-notification-new">
@@ -302,7 +304,8 @@
           <marquee
             onmouseover="this.stop()"
             onmouseout="this.start()"
-            scrollamount="5">Thông báo quan trọng</marquee
+            direction="left"
+            scrollamount="3">Thông báo quan trọng</marquee
           >
         </div>
         <div class="home__news-notification-new">
@@ -324,7 +327,8 @@
           <marquee
             onmouseover="this.stop()"
             onmouseout="this.start()"
-            scrollamount="5">Thông báo quan trọng</marquee
+            direction="left"
+            scrollamount="3">Thông báo quan trọng</marquee
           >
         </div>
         <div class="home__news-notification-new">
@@ -346,7 +350,8 @@
           <marquee
             onmouseover="this.stop()"
             onmouseout="this.start()"
-            scrollamount="5">Thông báo quan trọng</marquee
+            direction="left"
+            scrollamount="3">Thông báo quan trọng</marquee
           >
         </div>
         <div class="home__news-notification-new">
@@ -368,7 +373,8 @@
           <marquee
             onmouseover="this.stop()"
             onmouseout="this.start()"
-            scrollamount="5">Thông báo quan trọng</marquee
+            direction="left"
+            scrollamount="3">Thông báo quan trọng</marquee
           >
         </div>
         <div class="home__news-notification-new">
@@ -390,7 +396,8 @@
           <marquee
             onmouseover="this.stop()"
             onmouseout="this.start()"
-            scrollamount="5">Thông báo quan trọng</marquee
+            direction="left"
+            scrollamount="3">Thông báo quan trọng</marquee
           >
         </div>
         <div class="home__news-notification-new">
@@ -412,7 +419,8 @@
           <marquee
             onmouseover="this.stop()"
             onmouseout="this.start()"
-            scrollamount="5">Thông báo quan trọng</marquee
+            direction="left"
+            scrollamount="3">Thông báo quan trọng</marquee
           >
         </div>
       </div>
@@ -435,6 +443,7 @@
             <p>Điều chỉnh quy hoạch sử dụng đất trong khu biệt thự</p>
             <img src="./../images/news.png" alt="anh" />
             <p>Điều chỉnh quy hoạch sử dụng đất trong khu biệt thự</p>
+             
           </div>
         </div>
       </div>

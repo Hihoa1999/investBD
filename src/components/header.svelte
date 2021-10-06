@@ -1,4 +1,11 @@
-<scipt />
+<script>
+  import {link} from 'svelte-spa-router';
+  let linkHome="./";
+  import {push, pop, replace} from 'svelte-spa-router'
+  const incrementCount =()=>{
+    push("/");
+  }
+</script>
 
 <header class="header" id="header">
   <div class="header__content">
@@ -6,7 +13,7 @@
       <div class="header__logo-logos">
         <img src="./../images/logo.png" alt="logo" />
         <div class="header__logo-logos-title">
-          <span>INVESTBINHDINH</span>
+          <span on:click={incrementCount}>INVESTBINHDINH</span>
           <p>Đồng hành cùng nhà đầu tư</p>
         </div>
       </div>

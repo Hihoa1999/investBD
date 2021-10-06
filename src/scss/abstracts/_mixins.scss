@@ -24,6 +24,11 @@
             @content;
         } //900px
     }
+    @if $breakpoint==small-des {
+        @media only screen and (max-width: 1017px) {
+            @content;
+        } //1017px
+    }
     @if $breakpoint==des {
         @media only screen and (max-width: 75em) {
             @content;

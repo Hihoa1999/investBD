@@ -112,8 +112,8 @@
                 left: 10.5%;
             }
             @include respond(phone) {
-                left: 13%;
-                width: 70%;
+                left: 3%;
+                width: 92%;
             }
             &-block {
                 justify-content: $ct;
@@ -166,6 +166,10 @@
             @include respond(phone) {
                 padding-left: 8px;
                 padding-right: 8px;
+            }
+            @include respond(tab) {
+                padding-left: 20px;
+                padding-right: 20px;
             }
             &-title {
                 width: 100%;
@@ -299,7 +303,7 @@
             min-height: 602px;
         }
         @include respond(tab) {
-            min-height: 870px;
+            min-height: 975px;
         }
         @include respond(phone) {
             height: 1300px;
@@ -309,6 +313,10 @@
         }
         .pd-section {
             @include pd-section;
+            @include respond(tab) {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
             @include respond(phone) {
                 padding-right: 19px;
                 padding-left: 20px;
@@ -404,7 +412,7 @@
                     height: 28%;
                     margin-top: 8px;
                     @include respond(tab) {
-                        min-height: 89px;
+                        min-height: 118px;
                     }
                     &-img {
                         width: 30%;
@@ -467,7 +475,7 @@
             &-new {
                 padding-left: 20px;
                 margin-top: 10px;
-                width: 100%;
+                width: 95%;
                 &-title {
                     span {
                         @include span;
@@ -490,19 +498,26 @@
         width: 100%;
         min-height: 440px;
         @include respond(des) {
-            min-height: 450px;
+            min-height: 620px;
+        }
+        @include respond(small-des) {
+            min-height: 620px;
         }
         @include respond(tab) {
-            min-height: 900px;
+            min-height: 1566px;
         }
         @include respond(small-tab) {
-            min-height: 1100px;
+            min-height: 1342px;
         }
         @include respond(phone) {
             height: 2732px;
         }
         .pd-section {
             @include pd-section;
+            @include respond(tab) {
+                padding-right: 19px;
+                padding-left: 20px;
+            }
             @include respond(phone) {
                 padding-right: 19px;
                 padding-left: 20px;
@@ -553,13 +568,27 @@
                     img {
                         width: 30%;
                         float: left;
+                        @include respond(des) {
+                            width: 60%;
+                        }
+                        @include respond(small-des) {
+                            width: 60%;
+                        }
+                        @include respond(tab) {
+                            width: 50%;
+                        }
+                        @include respond(phone) {
+                            width: 30%;
+                        }
                     }
                     p {
                         float: left;
                         width: 60%;
                         margin-top: 0px;
                         padding-left: 10px;
-                        @include respond(tab) {}
+                        @include respond(tab) {
+                            margin-top: 21px;
+                        }
                         @include respond(phone) {
                             margin-top: 12px;
                             margin-bottom: 48px;
@@ -582,6 +611,10 @@
         }
         .pd-section {
             @include pd-section;
+            @include respond(tab) {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
             @include respond(phone) {
                 padding-right: 19px;
                 padding-left: 20px;
@@ -594,7 +627,7 @@
                 padding-right: 10px;
                 @include respond(tab) {
                     width: 7%;
-                    padding-right: 20px;
+                    padding-right: 0px;
                 }
                 @include respond(phone) {
                     width: 10%;
@@ -644,7 +677,7 @@
             padding-left: 20px;
             padding-right: 20px;
             @include respond(tab) {
-                width: 64%;
+                width: 75%;
             }
             @include respond(phone) {
                 width: 62%;
